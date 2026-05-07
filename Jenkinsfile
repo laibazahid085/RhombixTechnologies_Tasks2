@@ -3,16 +3,15 @@ pipeline{
 
     stages{
         stage('build'){
-            step{
+            steps{
           echo "Building HTML projects......"
             }
         }
-    }
-    stages{
         stage('Test'){
-            step{
+            steps{
           echo "Testing  projects......"
             }
         }
     }
+
 }
